@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH Beauté - Salon de Beauté Premium | Tizi-Ouzou</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --orchid-mauve: #C9B6E4;
+            --quartz-pink: #F7CACA;
+            --eucalyptus-green: #8DA681;
+            --ivory: #FDF5E6;
+            --velvet-brown: #3D2B1F;
+            --gold: #D4AF37;
+            --deep-mauve: #A78FBF;
+            --light-ivory: #FFFBF3;
+            --royal-purple: #6C5B7B;
+            --misty-rose: #F8E6E9;
+            --soft-lilac: #D8CEE5;
+            --sage-green: #A8B8A0;
+            --dark-mauve: #5D4A6F;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, var(--light-ivory) 0%, #f8f3e9 100%);
+            color: var(--velvet-brown);
+            line-height: 1.7;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* AI Generated Elements */
+        .ai-bubble {
+            position: absolute;
+            background: rgba(201, 182, 228, 0.2);
+            border-radius: 50%;
+            z-index: -1;
+            animation: floatBubble 25s infinite ease-in-out;
+        }
+        
+        @keyframes floatBubble {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            25% { transform: translateY(-20px) translateX(10px); }
+            50% { transform: translateY(0) translateX(20px); }
+            75% { transform: translateY(20px) translateX(10px); }
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: rgba(253, 245, 230, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(61, 43, 31, 0.1);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s ease;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: var(--deep-mauve);
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--gold);
+            font-size: 2.5rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--velvet-brown);
+            font-weight: 500;
+            font-size: 1.1rem;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 8px 5px;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: var(--orchid-mauve);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        
+        nav ul li a:hover {
+            color: var(--orchid-mauve);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            font-size: 1.8rem;
+            color: var(--velvet-brown);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 0 5%;
+            margin-top: 80px;
+            background: linear-gradient(135deg, var(--misty-rose) 0%, var(--light-ivory) 100%);
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgzMCkiPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjEuNSIgZmlsbD0iI0M5QjZFNCIgZmlsbC1vcGFjaXR5PSIwLjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=');
+            opacity: 0.15;
+            z-index: -1;
+        }
+        
+        .hero-content {
+            max-width: 650px;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: var(--velvet-brown);
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            color: var(--deep-mauve);
+            position: relative;
+        }
+        
+        .hero h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background: rgba(201, 182, 228, 0.3);
+            z-index: -1;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 90%;
+            color: #5a4a42;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--orchid-mauve), var(--deep-mauve));
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 25px rgba(167, 143, 191, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(167, 143, 191, 0.5);
+        }
+        
+        .hero-image {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40%;
+            max-width: 600px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(61, 43, 31, 0.2);
+            border: 15px solid white;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(-50%); }
+            50% { transform: translateY(-52%); }
+            100% { transform: translateY(-50%); }
+        }
+        
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(253, 245, 230, 0.1), rgba(201, 182, 228, 0.1));
+            z-index: 1;
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 100px 5%;
+            background: var(--ivory);
+            position: relative;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            height: 200px;
+            background: linear-gradient(135deg, var(--orchid-mauve), var(--deep-mauve));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--velvet-brown);
+        }
+        
+        .service-content p {
+            margin-bottom: 20px;
+            color: #7a6b63;
+        }
+        
+        .service-prices {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .price-tag {
+            background: var(--misty-rose);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--velvet-brown);
+        }
+        
+        /* Special Offers Section */
+        .offers-section {
+            padding: 80px 5%;
+            background: linear-gradient(135deg, var(--light-ivory) 0%, #f8f3e9 100%);
+            position: relative;
+        }
+        
+        .offer-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 40px auto 0;
+        }
+        
+        .offer-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            position: relative;
+            border: 1px solid rgba(167, 143, 191, 0.2);
+        }
+        
+        .offer-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .offer-badge {
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--gold);
+            color: white;
+            padding: 8px 40px;
+            transform: rotate(45deg);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .offer-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--orchid-mauve), var(--deep-mauve));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .offer-content {
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .offer-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--velvet-brown);
+        }
+        
+        .offer-price {
+            font-size: 1.8rem;
+            color: var(--deep-mauve);
+            font-weight: 700;
+            margin: 15px 0;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 1.2rem;
+        }
+        
+        .offer-details {
+            margin: 20px 0;
+            color: #7a6b63;
+        }
+        
+        /* Booking Section */
+        .booking-section {
+            padding: 120px 5%;
+            background: var(--ivory);
+            position: relative;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--velvet-brown);
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--orchid-mauve);
+            border-radius: 2px;
+        }
+        
+        .section-header p {
+            color: #7a6b63;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        
+        .booking-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(61, 43, 31, 0.15);
+        }
+        
+        .form-container {
+            flex: 1;
+            padding: 50px;
+            background: white;
+        }
+        
+        .form-header {
+            margin-bottom: 30px;
+        }
+        
+        .form-header h3 {
+            font-size: 2rem;
+            color: var(--velvet-brown);
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .form-header p {
+            color: #8a7d76;
+        }
+        
+        .booking-form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--velvet-brown);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid #e0d7cf;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+            background: #fcfaf7;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--orchid-mauve);
+            box-shadow: 0 0 0 3px rgba(201, 182, 228, 0.3);
+        }
+        
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%233d2b1f' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 14px;
+            padding-right: 45px;
+        }
+        
+        .submit-btn {
+            grid-column: span 2;
+            padding: 18px;
+            background: linear-gradient(135deg, var(--orchid-mauve), var(--deep-mauve));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(167, 143, 191, 0.4);
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+        
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(167, 143, 191, 0.5);
+        }
+        
+        .services-container {
+            flex: 0 0 40%;
+            background: linear-gradient(135deg, var(--orchid-mauve), var(--deep-mauve));
+            padding: 50px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .services-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJmbG9yYWwiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDMwKSI+PHBhdGggZD0iTTQwLDIwIEM1MCwxMCA2MCwxMCA3MCwyMCBDODAsMzAgODAsNDAgNzAsNTAgQzYwLDYwIDUwLDYwIDQwLDUwIEMzMCw0MCAzMCwzMCA0MCwyMCBaIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMC41IiBvcGFjaXR5PSIwLjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZmxvcmFsKSIvPjwvc3ZnPg==');
+            opacity: 0.1;
+        }
+        
+        .services-header {
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .services-header h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .price-list {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .price-item:last-child {
+            border-bottom: none;
+        }
+        
+        .price-item .service-name {
+            font-weight: 500;
+        }
+        
+        .price-item .service-price {
+            font-weight: 600;
+            color: var(--gold);
+        }
+        
+        .service-category {
+            margin-top: 40px;
+        }
+        
+        .service-category h4 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Testimonials */
+        .testimonials-section {
+            padding: 100px 5%;
+            background: linear-gradient(135deg, var(--light-ivory) 0%, #f8f3e9 100%);
+            text-align: center;
+        }
+        
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            overflow-x: auto;
+            gap: 30px;
+            padding: 20px 0;
+            scrollbar-width: none;
+        }
+        
+        .testimonials-container::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .testimonial-card {
+            min-width: 350px;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--orchid-mauve);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        
+        .testimonial-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .testimonial-stars {
+            color: var(--gold);
+        }
+        
+        /* Gallery */
+        .gallery-section {
+            padding: 100px 5%;
+            background: var(--ivory);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .gallery-item {
+            height: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, transparent 100%);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        /* Loyalty Program */
+        .loyalty-section {
+            padding: 100px 5%;
+            background: linear-gradient(135deg, var(--orchid-mauve) 0%, var(--deep-mauve) 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .loyalty-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 40px auto 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .loyalty-steps {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        
+        .loyalty-step {
+            flex: 1;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .loyalty-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px;
+            overflow: hidden;
+            position: relative;
+            animation: modalIn 0.5s ease;
+        }
+        
+        @keyframes modalIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .modal-header {
+            background: linear-gradient(135deg, var(--orchid-mauve), var(--deep-mauve));
+            padding: 25px;
+            color: white;
+            text-align: center;
+        }
+        
+        .modal-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .modal-body {
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .modal-body p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .close-modal:hover {
+            transform: rotate(90deg);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--velvet-brown);
+            color: var(--ivory);
+            padding: 70px 5% 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto 50px;
+        }
+        
+        .footer-column h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--orchid-mauve);
+        }
+        
+        .contact-info {
+            list-style: none;
+        }
+        
+        .contact-info li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-info i {
+            margin-right: 15px;
+            color: var(--quartz-pink);
+            min-width: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+            color: var(--ivory);
+            text-decoration: none;
+        }
+        
+        .social-links a:hover {
+            background: var(--orchid-mauve);
+            transform: translateY(-3px);
+        }
+        
+        .hours-list {
+            list-style: none;
+        }
+        
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            
+            .booking-container {
+                flex-direction: column;
+            }
+            
+            .services-container {
+                flex: 1;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-image {
+                width: 50%;
+            }
+            
+            .loyalty-steps {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .loyalty-step:not(:last-child)::after {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav ul {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                background: white;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 0;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                transform: translateY(-150%);
+                transition: transform 0.4s ease;
+            }
+            
+            nav ul.active {
+                transform: translateY(0);
+            }
+            
+            nav ul li {
+                margin: 15px 0;
+            }
+            
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 60px;
+                height: auto;
+            }
+            
+            .hero-content {
+                margin-bottom: 50px;
+            }
+            
+            .hero-image {
+                position: relative;
+                top: auto;
+                right: auto;
+                transform: none;
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                margin: 0 auto 30px;
+            }
+            
+            .booking-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+            
+            .submit-btn {
+                grid-column: span 1;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .section-header h2 {
+                font-size: 2.2rem;
+            }
+            
+            .form-container, .services-container {
+                padding: 30px;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animated {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <!-- AI Generated Background Elements -->
+    <div class="ai-bubble" style="width: 200px; height: 200px; top: 10%; left: 5%;"></div>
+    <div class="ai-bubble" style="width: 150px; height: 150px; top: 60%; left: 80%;"></div>
+    <div class="ai-bubble" style="width: 120px; height: 120px; top: 30%; left: 70%;"></div>
+    <div class="ai-bubble" style="width: 180px; height: 180px; top: 80%; left: 15%;"></div>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/213541921367" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <i class="fas fa-spa"></i>
+                DH Beauté
+            </div>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#offers">Offres</a></li>
+                <li><a href="#booking">Réservation</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="animated">Révélez votre <span>beauté naturelle</span></h1>
+            <p class="animated delay-1">Bienvenue chez DH Beauté, votre havre de paix dédié à l'art de la beauté et du bien-être. Nos experts vous accompagnent pour sublimer votre apparence et révéler votre éclat intérieur.</p>
+            <a href="#booking" class="cta-button animated delay-2">Prendre rendez-vous</a>
+            <div class="animated delay-3" style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+                <span style="display: flex; align-items: center; background: rgba(253, 245, 230, 0.7); padding: 10px 20px; border-radius: 30px; font-size: 0.9rem;">
+                    <i class="fas fa-check-circle" style="color: var(--orchid-mauve); margin-right: 8px;"></i>
+                    <span>Professionnels certifiés</span>
+                </span>
+                <span style="display: flex; align-items: center; background: rgba(253, 245, 230, 0.7); padding: 10px 20px; border-radius: 30px; font-size: 0.9rem;">
+                    <i class="fas fa-star" style="color: var(--gold); margin-right: 8px;"></i>
+                    <span>Produits premium</span>
+                </span>
+                <span style="display: flex; align-items: center; background: rgba(253, 245, 230, 0.7); padding: 10px 20px; border-radius: 30px; font-size: 0.9rem;">
+                    <i class="fas fa-gift" style="color: var(--quartz-pink); margin-right: 8px;"></i>
+                    <span>Programme fidélité</span>
+                </span>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Salon de beauté DH Beauté">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="section-header">
+            <h2 class="animated">Nos Services Premium</h2>
+            <p class="animated delay-1">Découvrez notre gamme complète de services beauté réalisés par des professionnels passionnés.</p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Coiffure -->
+            <div class="service-card animated">
+                <div class="service-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Coiffure</h3>
+                    <p>Des coupes tendances, des colorations éclatantes et des soins capillaires revitalisants.</p>
+                    <div class="service-prices">
+                        <span class="price-tag">Brushing: 500 DA</span>
+                        <span class="price-tag">Coupe + Brushing: 800 DA</span>
+                        <span class="price-tag">Application racine: 1500 DA</span>
+                        <span class="price-tag">Coloration (local): 2000 DA</span>
+                        <span class="price-tag">Coloration (import): 2500 DA</span>
+                        <span class="price-tag">Mèches (local): 2500 DA</span>
+                        <span class="price-tag">Mèches (import): 4000 DA</span>
+                        <span class="price-tag">Balayage: 8000 DA</span>
+                        <span class="price-tag">Soin capillaire: 6000 DA</span>
+                        <span class="price-tag">Lissage brésilien: 12000 DA</span>
+                        <span class="price-tag">Supplément soin: 1500 DA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Onglerie -->
+            <div class="service-card animated delay-1">
+                <div class="service-icon">
+                    <i class="fas fa-hand-sparkles"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Onglerie</h3>
+                    <p>Des mains et pieds parfaitement soignés avec les dernières tendances en manucure et pédicure.</p>
+                    <div class="service-prices">
+                        <span class="price-tag">Pose capsules: 2500 DA</span>
+                        <span class="price-tag">Gel sur ongles naturels: 2300 DA</span>
+                        <span class="price-tag">Remplissage: 2000 DA</span>
+                        <span class="price-tag">Vernis semi-permanent: 1500 DA</span>
+                        <span class="price-tag">French/Babyboomer: +500 DA</span>
+                        <span class="price-tag">Nail art: 200 DA/doigt</span>
+                        <span class="price-tag">Dépose: 500-800 DA</span>
+                        <span class="price-tag">Manucure basique: 1000 DA</span>
+                        <span class="price-tag">Pédicure basique: 2500 DA</span>
+                        <span class="price-tag">Soin peeling pieds: 4000 DA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Soins du Visage -->
+            <div class="service-card animated delay-2">
+                <div class="service-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Soins du Visage</h3>
+                    <p>Des soins personnalisés pour révéler votre éclat naturel et préserver la jeunesse de votre peau.</p>
+                    <div class="service-prices">
+                        <span class="price-tag">Soin visage basique: 2000 DA</span>
+                        <span class="price-tag">Soin purifiant & éclaircissant: 3000 DA</span>
+                        <span class="price-tag">HydraFacial: 5000 DA</span>
+                        <span class="price-tag">Soin du dos + massage: 3000 DA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Beauté du Regard -->
+            <div class="service-card animated delay-3">
+                <div class="service-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Beauté du Regard</h3>
+                    <p>Sublimez votre regard avec nos extensions de cils et rehaussements professionnels.</p>
+                    <div class="service-prices">
+                        <span class="price-tag">Extensions effet naturel: 2000 DA</span>
+                        <span class="price-tag">Extensions effet mixte léger: 2500 DA</span>
+                        <span class="price-tag">Extensions effet mixte chargé: 3000 DA</span>
+                        <span class="price-tag">Extensions volumineux: 3500 DA</span>
+                        <span class="price-tag">Extensions effet russe: 4000 DA</span>
+                        <span class="price-tag">Dépose: 600 DA</span>
+                        <span class="price-tag">Rehaussement + teinture: 2500 DA</span>
+                        <span class="price-tag">Brow Lift + teinture: 2500 DA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Épilation -->
+            <div class="service-card animated">
+                <div class="service-icon">
+                    <i class="fas fa-wind"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Épilation</h3>
+                    <p>Une épilation précise et durable pour une peau douce et parfaite en toutes circonstances.</p>
+                    <div class="service-prices">
+                        <span class="price-tag">Visage complet: 600 DA</span>
+                        <span class="price-tag">Aisselles: 500 DA</span>
+                        <span class="price-tag">Demi-bras: 500 DA</span>
+                        <span class="price-tag">Bras complets: 900 DA</span>
+                        <span class="price-tag">Demi-jambes: 800 DA</span>
+                        <span class="price-tag">Jambes complètes: 1400 DA</span>
+                        <span class="price-tag">Ventre: 700 DA</span>
+                        <span class="price-tag">Dos complet: 700 DA</span>
+                        <span class="price-tag">Bas du dos: 300 DA</span>
+                        <span class="price-tag">Maillot intégral: 2000 DA</span>
+                        <span class="price-tag">Corps complet: 5500 DA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Massage -->
+            <div class="service-card animated delay-1">
+                <div class="service-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Massage Relaxant</h3>
+                    <p>Laissez-vous emporter par nos massages relaxants et retrouvez bien-être et sérénité.</p>
+                    <div class="service-prices">
+                        <span class="price-tag">Massage relaxant: 3000 DA</span>
+                        <span class="price-tag">Massage dos: 2000 DA</span>
+                        <span class="price-tag">Massage complet: 4000 DA</span>
+                        <span class="price-tag">Soin du dos + massage: 3000 DA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers-section" id="offers">
+        <div class="section-header">
+            <h2 class="animated">Nos Offres Spéciales</h2>
+            <p class="animated delay-1">Découvrez nos promotions exclusives et forfaits découverte</p>
+        </div>
+        
+        <div class="offer-cards">
+            <div class="offer-card animated">
+                <div class="offer-badge">-15%</div>
+                <div class="offer-image">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <div class="offer-content">
+                    <h3>Première Visite</h3>
+                    <div class="offer-price">-15%</div>
+                    <p class="offer-details">Profitez de 15% de réduction sur votre premier service chez DH Beauté</p>
+                    <a href="#booking" class="cta-button">Réserver maintenant</a>
+                </div>
+            </div>
+            
+            <div class="offer-card animated delay-1">
+                <div class="offer-badge">Forfait</div>
+                <div class="offer-image">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <div class="offer-content">
+                    <h3>Beauté Complète</h3>
+                    <div class="offer-price">8000 DA</div>
+                    <p class="original-price">11000 DA</p>
+                    <p class="offer-details">Soin du visage + Manucure + Brushing</p>
+                    <a href="#booking" class="cta-button">Réserver maintenant</a>
+                </div>
+            </div>
+            
+            <div class="offer-card animated delay-2">
+                <div class="offer-badge">VIP</div>
+                <div class="offer-image">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="offer-content">
+                    <h3>Carte Fidélité</h3>
+                    <div class="offer-price">Offert</div>
+                    <p class="offer-details">1 service offert après 10 prestations achetées</p>
+                    <a href="#contact" class="cta-button">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="booking">
+        <div class="section-header">
+            <h2 class="animated">Réserver votre rendez-vous</h2>
+            <p class="animated delay-1">Remplissez le formulaire ci-dessous pour réserver votre séance beauté. Notre équipe vous contactera pour confirmer votre rendez-vous.</p>
+        </div>
+        
+        <div class="booking-container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h3>Vos informations</h3>
+                    <p>Tous les champs sont obligatoires</p>
+                </div>
+                <form class="booking-form" id="bookingForm" action="https://formspree.io/f/meokkzre" method="POST">
+                    <div class="form-group">
+                        <label for="lastName">Nom</label>
+                        <input type="text" id="lastName" name="lastName" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="firstName">Prénom</label>
+                        <input type="text" id="firstName" name="firstName" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service souhaité</label>
+                        <select id="service" name="service" class="form-control" required>
+                            <option value="">Sélectionnez un service</option>
+                            <optgroup label="Coiffure">
+                                <option value="brushing">Brushing</option>
+                                <option value="coupe_brushing">Coupe + Brushing</option>
+                                <option value="application_racine">Application racine</option>
+                                <option value="coloration_locale">Coloration (local)</option>
+                                <option value="coloration_import">Coloration (importation)</option>
+                                <option value="meches_locales">Mèches (local)</option>
+                                <option value="meches_import">Mèches (importation)</option>
+                                <option value="balayage">Balayage</option>
+                                <option value="soin_capillaire">Soin capillaire</option>
+                                <option value="lissage_brasilien">Lissage brésilien</option>
+                            </optgroup>
+                            <optgroup label="Onglerie">
+                                <option value="pose_capsules">Pose capsules</option>
+                                <option value="gel_ongles">Gel sur ongles naturels</option>
+                                <option value="remplissage">Remplissage</option>
+                                <option value="vernis_semi">Vernis semi-permanent</option>
+                                <option value="french">French / Babyboomer</option>
+                                <option value="nail_art">Nail art</option>
+                                <option value="depose">Dépose</option>
+                                <option value="manucure_basique">Manucure basique</option>
+                                <option value="pedicure_basique">Pédicure basique</option>
+                            </optgroup>
+                            <optgroup label="Soins du visage">
+                                <option value="soin_basique">Soin visage basique</option>
+                                <option value="soin_purifiant">Soin purifiant & éclaircissant</option>
+                                <option value="hydrafacial">HydraFacial</option>
+                                <option value="soin_dos_massage">Soin du dos + massage</option>
+                            </optgroup>
+                            <optgroup label="Épilation">
+                                <option value="epilation_visage">Visage complet</option>
+                                <option value="aisselles">Aisselles</option>
+                                <option value="demi_bras">Demi-bras</option>
+                                <option value="bras_complet">Bras complets</option>
+                                <option value="demi_jambes">Demi-jambes</option>
+                                <option value="jambes_completes">Jambes complètes</option>
+                                <option value="ventre">Ventre</option>
+                                <option value="dos_complet">Dos complet</option>
+                                <option value="bas_dos">Bas du dos</option>
+                                <option value="maillot_integral">Maillot intégral</option>
+                                <option value="corps_complet">Épilation corps complet</option>
+                            </optgroup>
+                            <optgroup label="Beauté du regard">
+                                <option value="extensions_naturel">Extensions effet naturel</option>
+                                <option value="extensions_mixte">Extensions effet mixte</option>
+                                <option value="extensions_volumineux">Extensions volumineux</option>
+                                <option value="extensions_russe">Extensions effet russe</option>
+                                <option value="rehaussement_cils">Rehaussement de cils + teinture</option>
+                                <option value="brow_lift">Brow Lift + teinture</option>
+                            </optgroup>
+                            <optgroup label="Massage">
+                                <option value="massage_relaxant">Massage relaxant</option>
+                                <option value="massage_dos">Massage du dos</option>
+                                <option value="massage_complet">Massage complet</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Date souhaitée</label>
+                        <input type="date" id="date" name="date" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Heure souhaitée</label>
+                        <select id="time" name="time" class="form-control" required>
+                            <option value="">Sélectionnez une heure</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Message (optionnel)</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Des informations supplémentaires ou demandes spécifiques..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Réserver maintenant</button>
+                </form>
+            </div>
+            
+            <div class="services-container">
+                <div class="services-header">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2 class="animated">Ce que disent nos clientes</h2>
+            <p class="animated delay-1">Découvrez les témoignages de celles qui nous ont fait confiance</p>
+        </div>
+        
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="testimonial-info">
+                        <h4>Sarah K.</h4>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"J'ai essayé le lissage brésilien et je suis conquise ! Mes cheveux sont doux et brillants comme jamais. Le personnel est très professionnel et l'ambiance du salon est relaxante."</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="testimonial-info">
+                        <h4>Amel T.</h4>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Le soin HydraFacial est tout simplement incroyable ! Ma peau est éclatante et hydratée. Je recommande vivement ce salon pour la qualité des soins et l'expertise des esthéticiennes."</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="testimonial-info">
+                        <h4>Nadia M.</h4>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Je viens régulièrement pour mes extensions de cils et je suis toujours satisfaite. Le résultat est naturel et dure longtemps. L'accueil est chaleureux et le salon très propre."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loyalty Program -->
+    <section class="loyalty-section">
+        <div class="section-header">
+            <h2 class="animated">Programme Fidélité</h2>
+            <p class="animated delay-1">Plus vous venez, plus vous êtes récompensée !</p>
+        </div>
+        
+        <div class="loyalty-card">
+            <div class="loyalty-steps">
+                <div class="loyalty-step">
+                    <div class="step-number">1</div>
+                    <h4>Inscription</h4>
+                    <p>Demandez votre carte fidélité à votre première visite</p>
+                </div>
+                <div class="loyalty-step">
+                    <div class="step-number">2</div>
+                    <h4>Collectez des points</h4>
+                    <p>1 DA dépensé = 1 point</p>
+                </div>
+                <div class="loyalty-step">
+                    <div class="step-number">3</div>
+                    <h4>Bénéficiez d'avantages</h4>
+                    <p>Services offerts, réductions exclusives, cadeaux surprises</p>
+                </div>
+            </div>
+            <a href="#booking" class="cta-button">Devenir membre VIP</a>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <h2 class="animated">Notre Galerie</h2>
+            <p class="animated delay-1">Un aperçu de notre univers beauté et bien-être</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuVsFn2-Zx1N1HB04ESA9boFbU7-eUQGVf9A&s" alt="Coiffeuse femme">
+                <div class="gallery-overlay">Coiffure</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Onglerie">
+                <div class="gallery-overlay">Onglerie</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Soins du visage">
+                <div class="gallery-overlay">Soins du visage</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Massage">
+                <div class="gallery-overlay">Massage</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Beauté du regard">
+                <div class="gallery-overlay">Beauté du regard</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Épilation">
+                <div class="gallery-overlay">Épilation</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>DH Beauté</h3>
+                <p>Votre salon de beauté premium à Tizi-Ouzou, où l'excellence rencontre le bien-être.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/dh__beaute?igsh=cTBmaHNkcm15Nm05" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/213541921367" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Cité Les 2000, en face du portail sud Hesnaoua, Tizi-Ouzou</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>05 41 92 13 67</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>dhbeaute15@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Horaires</h3>
+                <ul class="hours-list">
+           
+                    <li>
+                        <span>Tous les jours</span>
+                        <span>9h - 17h</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Inscrivez-vous pour recevoir nos offres exclusives et conseils beauté.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" id="newsletterEmail" placeholder="Votre email" class="form-control" required>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%; margin-top: 10px;">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 DH Beauté. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Merci pour votre réservation!</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Votre demande a été envoyée avec succès. Notre équipe vous contactera très bientôt pour confirmer votre rendez-vous.</p>
+                <a href="#home" class="cta-button" style="margin-top: 20px;">Retour à l'accueil</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('nav ul');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.querySelector('i').classList.toggle('fa-bars');
+            mobileMenuBtn.querySelector('i').classList.toggle('fa-times');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                        mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                    }
+                }
+            });
+        });
+        
+        // Form Submission
+        const bookingForm = document.getElementById('bookingForm');
+        const confirmationModal = document.getElementById('confirmationModal');
+        const closeModal = document.querySelector('.close-modal');
+        
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Form validation
+            const requiredFields = bookingForm.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#e74c3c';
+                } else {
+                    field.style.borderColor = '#e0d7cf';
+                }
+            });
+            
+            if (isValid) {
+                // Show loading state
+                const submitBtn = bookingForm.querySelector('.submit-btn');
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+                submitBtn.disabled = true;
+                
+                // Simulate form submission (in a real scenario, this would be an AJAX call)
+                setTimeout(() => {
+                    // Reset form
+                    bookingForm.reset();
+                    
+                    // Show success modal
+                    confirmationModal.style.display = 'flex';
+                    
+                    // Reset button
+                    submitBtn.innerHTML = 'Réserver maintenant';
+                    submitBtn.disabled = false;
+                }, 1500);
+            }
+        });
+        
+        // Close modal
+        closeModal.addEventListener('click', () => {
+            confirmationModal.style.display = 'none';
+        });
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === confirmationModal) {
+                confirmationModal.style.display = 'none';
+            }
+        });
+        
+        // Animation on scroll
+        const animatedElements = document.querySelectorAll('.animated');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        animatedElements.forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(20px)';
+            observer.observe(element);
+        });
+        
+        // Set min date for booking to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').setAttribute('min', today);
+        
+        // Gallery modal functionality
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const galleryModal = document.createElement('div');
+        galleryModal.className = 'modal';
+        galleryModal.style.display = 'none';
+        
+        const modalImg = document.createElement('img');
+        modalImg.style.maxWidth = '90%';
+        modalImg.style.maxHeight = '90%';
+        modalImg.style.borderRadius = '10px';
+        
+        const closeBtn = document.createElement('span');
+        closeBtn.className = 'close-modal';
+        closeBtn.innerHTML = '&times;';
+        closeBtn.style.position = 'absolute';
+        closeBtn.style.top = '20px';
+        closeBtn.style.right = '20px';
+        closeBtn.style.color = 'white';
+        closeBtn.style.fontSize = '2rem';
+        closeBtn.style.cursor = 'pointer';
+        closeBtn.style.zIndex = '10';
+        
+        galleryModal.appendChild(closeBtn);
+        galleryModal.appendChild(modalImg);
+        document.body.appendChild(galleryModal);
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                modalImg.src = imgSrc;
+                galleryModal.style.display = 'flex';
+            });
+        });
+        
+        closeBtn.addEventListener('click', () => {
+            galleryModal.style.display = 'none';
+        });
+        
+        galleryModal.addEventListener('click', (e) => {
+            if (e.target === galleryModal) {
+                galleryModal.style.display = 'none';
+            }
+        });
+        
+        // Newsletter form
+        const newsletterForm = document.getElementById('newsletterForm');
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('newsletterEmail').value;
+            if (email) {
+                alert('Merci pour votre inscription à notre newsletter !');
+                newsletterForm.reset();
+            }
+        });
+        
+        // Generate bubbles
+        function createBubbles() {
+            const bubblesContainer = document.querySelector('body');
+            for (let i = 0; i < 8; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('ai-bubble');
+                const size = Math.floor(Math.random() * 100) + 50;
+                const top = Math.floor(Math.random() * 100);
+                const left = Math.floor(Math.random() * 100);
+                const delay = Math.floor(Math.random() * 20);
+                
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                bubble.style.top = `${top}%`;
+                bubble.style.left = `${left}%`;
+                bubble.style.animationDelay = `${delay}s`;
+                
+                bubblesContainer.appendChild(bubble);
+            }
+        }
+        
+        createBubbles();
+    </script>
+</body>
+</html>
